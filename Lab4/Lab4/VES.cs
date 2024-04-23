@@ -17,7 +17,7 @@ namespace Lab4
 
         private VES() { }
 
-        public static VES getInstance()
+        public static VES GetInstance()
         {
                 if (instance == null)
                 {

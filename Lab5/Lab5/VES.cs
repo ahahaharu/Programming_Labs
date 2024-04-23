@@ -3,34 +3,11 @@
 
 namespace Lab5
 {
-    public enum UtilityType
-    {
-        Water,
-        Electricity,
-        Gas
-    }
-
-    public class Tariff
-    {
-        public UtilityType Utility { get; set; }
-        public double Rate { get; set; }
-    }
-
-    public class Resident
-    {
-        public string Name { get; set; }
-        public Dictionary<UtilityType, double> ConsumedUtilities { get; set; }
-
-        public Resident()
-        {
-            ConsumedUtilities = new Dictionary<UtilityType, double>();
-        }
-    }
 
     public class VES
     {
-        public List<Tariff> Tariffs { get; set; }
-        public List<Resident> Residents { get; set; }
+        public List<Tariff> Tariffs;
+        public List<Resident> Residents;
 
         public VES()
         {
