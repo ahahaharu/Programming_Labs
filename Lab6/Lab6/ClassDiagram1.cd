@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Lab6.AlcoholicBeverage">
+    <Position X="0.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAMAAEAAAAAAQAAABAAAAAAAAAAgBAAAA=</HashCode>
+      <FileName>AlcoholicBeverage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab6.Beer">
+    <Position X="3" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAggAAAAA=</HashCode>
+      <FileName>Beer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab6.Wine">
+    <Position X="5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Wine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
