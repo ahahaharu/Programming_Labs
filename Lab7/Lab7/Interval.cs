@@ -50,6 +50,36 @@ namespace Lab7
             }
         }
 
+        public double this[int index]
+        {
+            get
+            {
+                switch (index)
+                {
+                    case 0:
+                        return _start;
+                    case 1:
+                        return _end;
+                    default:
+                        throw new IndexOutOfRangeException("Индекс может быть 0 или 1.");
+                }
+            }
+            set
+            {
+                switch (index)
+                {
+                    case 0:
+                        Start = value;
+                        break;
+                    case 1:
+                        End = value;
+                        break;
+                    default:
+                        throw new IndexOutOfRangeException("Индекс может быть 0 или 1.");
+                }
+            }
+        }
+
         public double Length => Math.Abs(_end - _start);
 
         public static Interval operator +(Interval a, Interval b)
@@ -106,6 +136,15 @@ namespace Lab7
             return a.Length > b.Length;
         }
 
+        public static bool operator true(Interval a)
+        {
+            return a.Length != 0;
+        }
+
+        public static bool operator false(Interval a)
+        {
+            return a.Length == 0;
+        }
 
         public static explicit operator double(Interval a)
         {
