@@ -72,7 +72,7 @@ namespace Lab7
             }
             else
             {
-                throw new InvalidOperationException("Intervals do not intersect");
+                throw new InvalidOperationException("Интервалы не пересекаются");
             }
         }
 
@@ -106,15 +106,6 @@ namespace Lab7
             return a.Length > b.Length;
         }
 
-        public static bool operator true(Interval a)
-        {
-            return a.Length != 0;
-        }
-
-        public static bool operator false(Interval a)
-        {
-            return a.Length == 0;
-        }
 
         public static explicit operator double(Interval a)
         {
@@ -128,7 +119,7 @@ namespace Lab7
 
         public override string ToString()
         {
-            return $"Interval from {_start} to {_end}";
+            return $"Интервал от {_start} до {_end}";
         }
     }
 

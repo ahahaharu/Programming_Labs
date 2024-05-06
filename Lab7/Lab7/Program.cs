@@ -55,16 +55,18 @@ namespace Lab7
             Console.Write('\n');
 
             // Демонстрация работы операторов true и false
-            Console.WriteLine($"Является ли интервал1 непустым? {interval1}");
-            Console.WriteLine($"Является ли интервал2 непустым? {interval2}");
+            Console.WriteLine($"Является ли интервал1 непустым? {interval1.Length != 0}");
+            Console.WriteLine($"Является ли интервал2 непустым? {interval2.Length != 0}");
 
             Console.Write('\n');
 
             // Демонстрация работы явного преобразования типа
-            double длина1 = (double)interval1;
-            Interval интервал3 = (Interval)длина1;
-            Console.WriteLine($"Длина интервала1: {длина1}");
-            Console.WriteLine($"Новый интервал из длины: {интервал3}");
+            double length1 = (double)interval1;
+            Interval interval3 = (Interval)length1;
+            Console.WriteLine($"Длина интервала1: {length1}");
+            Console.WriteLine($"Новый интервал из длины: {interval3}");
+
+            Console.ReadLine();
         }
     }
 
