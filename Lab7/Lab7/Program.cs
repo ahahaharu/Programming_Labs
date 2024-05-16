@@ -55,8 +55,22 @@ namespace Lab7
             Console.Write('\n');
 
             // Демонстрация работы операторов true и false
-            Console.WriteLine($"Является ли интервал1 непустым? {interval1.Length != 0}");
-            Console.WriteLine($"Является ли интервал2 непустым? {interval2.Length != 0}");
+            if (interval1)
+            {
+                Console.WriteLine($"interval1 является непустым");
+            } else
+            {
+                Console.WriteLine($"interval1 является пустым");
+            }
+
+            if (interval2)
+            {
+                Console.WriteLine($"interval2 является непустым");
+            }
+            else
+            {
+                Console.WriteLine($"interval1 является пустым");
+            }
 
             Console.Write('\n');
 
